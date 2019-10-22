@@ -1,0 +1,79 @@
+/*
+
+Author: Amer Krehic a_krehic@hotmail.com
+
+Page: Équipe 1er niveau
+
+*/
+.singleEquipe__membre img {
+  width: 100%;
+  height: auto;
+}
+.singleEquipe__membre {
+  margin-bottom: 50px;
+}
+.singleEquipe__membre__bio {
+  padding: 10px;
+  h3 {
+    padding-bottom: 20px;
+  }
+}
+
+.singleEquipe__membre__bio__liens__retour {
+  width: 100%;
+  text-align: center;
+  background-color: $jaune;
+  padding: 15px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  @media (min-width: $bureau) {
+    width: 236px;
+    margin-top: 20px;
+  }
+}
+
+.singleEquipe__membre__bio__liens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.singleEquipe__membre__bio__liens__precedent {
+  width: 50%;
+  text-align: center;
+}
+
+.singleEquipe__membre__bio__liens__suivant {
+  width: 50%;
+  text-align: center;
+}
+@media (min-width: $bureau) {
+  .singleEquipe__membre {
+    display: flex;
+    flex-flow: row-reverse;
+    margin-bottom: 50px;
+  }
+  .singleEquipe__membre__bio {
+    position: absolute;
+    background-color: #322c2cd4;
+    width: 50%;
+    margin-top: 25%;
+    padding: 35px;
+    border: 5px solid $jaune;
+
+  }
+  .singleEquipe__membre__bio__liens {
+    margin-top: 50px;
+  }
+  .singleEquipe__membre__bio h3 {
+    font-size: 5rem;
+  }
+}
+.singleEquipe__membre__article {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.article .metadata {
+  display: none;
+}

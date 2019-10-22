@@ -1,0 +1,168 @@
+/* Styles généraux */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 10px;
+  padding: 0;
+  font: .8em Verdana, Arial, Helvetica, sans-serif;
+}
+/* Structure générale */
+#en-tete, nav, #contenu, footer { max-width: 1140px;
+  margin: 0 auto;
+}
+label.screen-reader-text {
+  display: block;
+}
+main, aside, #article-seul {
+  float: left;
+}
+main, #article-seul { width: 100%;
+}
+aside {
+  width: 30%;
+  border-left: 1px solid #333;
+}
+/* En-tête */
+#en-tete {
+  background-color: #eee;
+  border-bottom: 1px solid #333;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+#en-tete h1 {
+  margin: 0;
+  padding: 10px;
+}
+.image-une {
+  height: auto;
+  background-color: #eee;
+  background-size: cover;
+}
+
+/* Mise en forme de l'en-tete */
+header {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+header.image {
+  height: auto;
+}
+.inline {
+  display: inline;
+}
+/* Barre de menu */
+#principal, #secondaire {
+  border-bottom: 1px solid #333;
+}
+#en-tete nav ul {
+  margin: 0 0 0 10px;
+  padding: 10px 0 10px 10px;
+  list-style: none;
+}
+#en-tete nav li {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+#en-tete #contenu {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+nav {
+  border-bottom: 1px solid #333;
+}
+nav ul {
+  list-style: none;
+  margin: 10px 0 10px 10px;
+  padding: 0;
+}
+nav li {
+  display: inline-block; margin-right: 20px;
+}
+/* Les articles en page d'accueil */
+article {
+  border-bottom: 1px dotted #333;
+  padding-right: 8px;
+}
+article header.titre-article a {
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif; font-size: 1.3em;
+  color: #000;
+}
+/* Mise en forme de la sidebar */
+#main {
+  display: inline-block;
+}
+#gauche {
+  float: left;
+}
+#droite {
+  float: right;
+}
+#gauche ul, #droite ul {
+  margin: 0 0 0 10px;
+  padding: 10px 0 10px 10px;
+  list-style: none;
+}
+aside ul {
+  list-style: none;
+  margin: 10px 0 10px 10px;
+  padding: 0;
+}
+/* Le pied de page */
+footer {
+  background-color: #eee;
+  border-top: 1px solid #333;
+  padding: 10px;
+  max-width: 1140px;
+  clear: both;
+}
+footer h2 {
+  margin: 0;
+  padding: 10px;
+  font-size: 1em;
+}
+/* Les articles en page seule */
+#article-seul {
+  padding-right: 8px;
+}
+.metadata {
+  font-size: 0.8em;
+  color: gray;
+}
+/* Les pages */
+.en-tete-page {
+  font-style: italic;
+}
+/* Règles pour petits écrans */
+@media only screen and (max-width: 735px) { main, aside, #article-seul {
+  float: none; width: 100%;
+}
+  main, #article-seul {
+    border-bottom: 1px solid #333;
+  }
+  aside {
+    border-left: none;
+  }
+  aside ul {
+    margin-left: 0;
+  }
+}
+
+/* Mise en forme des articles au format Par defaut */
+.article {
+  padding-left: 0;
+  border: none;
+}
+.extrait {
+  font-style: italic;
+  color: gray;
+}
+footer.article {
+  font-size: small;
+  font-style: italic;
+  color: gray;
+}
+
+
+/* Commentaire de test pour gulp watch */

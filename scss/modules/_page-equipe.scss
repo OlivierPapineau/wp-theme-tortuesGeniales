@@ -1,0 +1,95 @@
+/*
+
+Author: Amer Krehic a_krehic@hotmail.com
+
+Page: Équipe 1er niveau
+
+*/
+.pageEquipe__membre {
+  //width: 90%;
+  height: 360px;
+  margin: 0 auto 40px auto;
+  display: inline-flex;
+  //position: relative;
+  @media (min-width: $bureau) {
+    .pageEquipe__membre {
+      height: 360px;
+      display: inline-flex;
+      width: span(6 of 12);
+      &:nth-child(1n) {
+        margin-right: gutter(1 of 12);
+      }
+      &:nth-child(3n) {
+        margin-right: gutter(1 of 12);
+      }
+    }
+    .backgroundRouge__contenu .pageEquipe__membre {
+      display: flex;
+      flex-flow: wrap;
+    }
+    main {
+      background-color: #0A246A;
+    }
+    .pageEquipe__membre__titre__photo__1 img {
+      max-width: 50%;
+      height: auto;
+    }
+    .pageEquipe__membre__titre__photo__1 img:hover {
+      opacity: 0;
+      transition-duration: 0.25s;
+    }
+    .pageEquipe__membre__titre__photo__2 img {
+      max-width: 50%;
+      height: auto;
+    }
+  }
+}
+
+.pageEquipe h1 {
+  position: relative;
+  text-align: center;
+  z-index: 99;
+}
+.pageEquipe h2 {
+  font-size: 2.4rem;
+}
+
+.pageEquipe__membre__titre__photo__1 img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.pageEquipe__membre__titre__photo__1 img:active {
+  opacity: 0;
+}
+
+.pageEquipe__membre__titre__photo__2 img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+@media (min-width: $bureau) {
+  .pageEquipe__membre {
+    width: 50%;
+    display: flex;
+
+  }
+}
+.pageEquipe .h1 {
+  text-align: center;
+  position: relative;
+  z-index: 99;
+}
+.pageEquipe .backgroundRouge {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+@media (min-width: $bureau) {
+  .pageEquipe__mem{
+    display: flex;
+    flex-flow: wrap;
+  }
+}

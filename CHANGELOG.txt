@@ -1,0 +1,80 @@
+
+CECI EST LE FICHIER TEXTE COMPORTANT TOUS LES CHANGEMENTS EFFECTUES SUR LE PROJET
+
+
+TEMPLATE DE CHANGEMENT:
+
+-------------------------------- DEBUT DU LOG ---------------------------------------
+
+    MODIFICATEUR: Prenom Nom
+    DATE: 34 fevrier 3004
+    HEURE: 00h00
+
+    FICHIERS MODIFIES:
+        - fichier1
+        - fichier2
+        - fichier3
+
+    COMMENTAIRES:
+        Ceci est un commentaire que personne ne va lire
+
+---------------------------------- FIN DU LOG ----------------------------------------
+-------------------------------- DEBUT DU LOG ---------------------------------------
+
+    MODIFICATEUR: Alexandre Blanchet
+    DATE: 24 mars 2019
+    HEURE: 18h23
+
+    FICHIERS MODIFIES:
+        - header.php
+        - footer.php
+        - page-accueil.php
+        - menu.scss
+        - ajouté dossier js dans le thème
+        - ajouté un dossier images pour les svg
+        - ajouté dossier node_modules dans le theme (seulement jQuery)
+        - supprimé menuMobile.scss
+        - supprimé le dossier inc
+
+
+    COMMENTAIRES:
+        Ceci est un commentaire que personne ne va lire
+
+---------------------------------- FIN DU LOG ----------------------------------------
+-------------------------------- DEBUT DU LOG ---------------------------------------
+
+    MODIFICATEUR: Olivier Papineau
+    DATE: 23 mars 2019
+    HEURE: 16h17
+
+    FICHIERS MODIFIES:
+        - _page-realisations.scss
+        - _single-realisation.scss
+        - page-realisations.php
+        - single-realisations.php
+        - style.css
+
+    COMMENTAIRES:
+        Stylisation de mes pages. Pullez TOUS mes fichiers avant de modifier les
+        votres. Il me reste a faire le background diagonal et mettre la citation.
+
+---------------------------------- FIN DU LOG ----------------------------------------
+-------------------------------- DEBUT DU LOG ---------------------------------------
+
+    MODIFICATEUR: Amer Krehic
+    DATE: 24 mars 2019
+    HEURE: 23h30
+
+    FICHIERS MODIFIES:
+        - page-equipe.php
+        - page-equipe.scss
+        - single-equipe.php
+        - single-equipe.scss
+
+    COMMENTAIRES:
+        J'ai quelques petits bugs avec des moitié de balise php pas rapport qui s'affiche
+        dans ma page et un autre bug supposement dans le dossier wp-include aucune idee pk.
+        Je vais retravailler dans mes fichiers demain avant-midi donc si Oli tu peux compiler
+        ca serait nice dit moi le avant cest tout.
+
+---------------------------------- FIN DU LOG ----------------------------------------

@@ -1,0 +1,49 @@
+/**
+ * @author Alexandre Blanchet <alexandre.blanchet.ab@gmail.com>
+*/
+.citation{
+  margin-top:30px;
+  margin-bottom:30px;
+  width:span(12 of 12);
+
+
+  z-index: 30;
+  position: relative;
+  &Droite {
+    width:span(11 of 12);
+    background-color: transparent;
+    border:$jaune solid 2px;
+    text-align: end;
+    padding: 10px 50px 10px;
+    opacity: 0.8;
+    &__text {
+      font-family: $fonteSecondaire;
+      @include fontSize(30px);
+      font-weight: bold;
+    }
+
+    &__auteur {
+      @include fontSize(18px);
+
+    }
+  }
+  &Gauche{
+    margin-left: span(1 of 12)+ gutter(12);
+    width:span(11 of 12);
+    background-color: transparent;
+    border:$jaune solid 2px;
+    text-align: start;
+    padding: 10px 50px 10px;
+    opacity: 0.8;
+    &__text {
+      font-family: $fonteSecondaire;
+      @include fontSize(30px);
+      font-weight: bold;
+    }
+
+    &__auteur {
+      @include fontSize(18px);
+
+    }
+  }
+}

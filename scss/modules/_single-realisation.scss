@@ -1,0 +1,109 @@
+/*
+ * SINGLE REALISATIONS
+ * Par: Olivier Papineau
+ */
+
+.singleRealisations__conteneur {
+  background-color: $rouge;
+  margin-top: 20px;
+  padding-top: 110px;
+  padding-bottom: 80px;
+  z-index: 97;
+  position: relative;
+  .singleRealisations__boutonRetour {
+    &--lienRetour {
+      display: block;
+      text-align: center;
+      width: 90%;
+      padding: 15px;
+      background-color: $jaune;
+      color: black;
+      margin: 0 auto 20px auto;
+      &:hover {
+        background-color: darken($jaune, 10%);
+        text-decoration: none;
+      }
+      @media (min-width: $bureau) {
+        width: span(3 of 12);
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+  .conteneur {
+    transform: skewY(5deg);
+  }
+  .singleRealisations__article {
+    width: 90%;
+    margin: 0 auto;
+    &__imageArticle {
+      img {
+        width: 100%;
+        height: auto;
+      }
+      @media (min-width: $bureau) {
+        width: span(6 of 12);
+      }
+    }
+    &__contenuArticle {
+      &--nomClient {
+        font-size: 4rem;
+        margin: 0;
+      }
+      &__liens {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        &--suivant {
+          width: span(2 of 4);
+          a {
+            width: 100%;
+            display: block;
+            background-color: $jaune;
+            padding: 15px;
+            text-align: center;
+            color: black;
+            &:hover {
+              background-color: darken($jaune, 10%);
+              text-decoration: none;
+            }
+          }
+          @media (min-width: $bureau) {
+            width: span(2 of 6);
+          }
+        }
+        &--precedent {
+          width: span(2 of 4);
+          a {
+            width: 100%;
+            display: block;
+            background-color: $jaune;
+            padding: 15px;
+            text-align: center;
+            color: black;
+            &:hover {
+              background-color: darken($jaune, 10%);
+              text-decoration: none;
+            }
+          }
+          @media (min-width: $bureau) {
+            width: span(2 of 6);
+          }
+        }
+      }
+      .image-une {
+        display: none;
+      }
+      footer {
+        display: none;
+      }
+      @media (min-width: $bureau) {
+        width: span(6 of 12);
+      }
+    }
+    @media (min-width: $bureau) {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

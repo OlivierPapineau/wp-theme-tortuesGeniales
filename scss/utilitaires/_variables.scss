@@ -1,0 +1,33 @@
+/**
+ * @author Alexandre Blanchet <alexandre.blanchet.ab@gmail.com>
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+
+/** Polices de caractères **/
+
+$fontePrimaire: 'Roboto', sans-serif;
+$fonteSecondaire: 'Montserrat', sans-serif;
+
+/** Palette de couleurs **/
+
+// Utiliser http://chir.ag/projects/name-that-color
+// pour obtenir des noms uniques et mémorisables
+// Permettez-vous d'utiliser un nom de variable plus explicite
+// si la suggestion de name-that-color est trop étrange
+
+/* Couleurs de base */
+$noir : #000000;
+$rouge : #B75555;
+$brunFonce : #322C2C;
+$jaune : #F0B13A;
+$blanc : #FFFFFF;
+/* Autres couleurs */
+
+/* Ombre des éléments de Liste */
+
+$ombre : 10px 10px 5px -8px rgba(235,235,235,1);
+
+/** Points de rupture **/
+
+$bureau : 600px;

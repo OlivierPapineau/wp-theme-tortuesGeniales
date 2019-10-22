@@ -1,0 +1,67 @@
+/**
+ * @author Alexandre Blanchet <alexandre.blanchet.ab@gmail.com>
+*/
+
+.logo__pied{
+  margin-top:100px;
+  padding-left: 5%;
+  margin-bottom: 20px;
+  @media (max-width:$bureau){
+    display: none;
+  }
+}
+
+.pied{
+  display:flex;
+  flex-flow: column;
+  width: span(4 of 4)- gutter();
+  h2{
+    font-style: inherit;
+    @include fontSize(30px);
+  }
+  @media (min-width:$bureau){
+    width: span(4 of 4);
+    padding: 50px 0 0;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+  &__backgroundRouge{
+    position: relative;
+  }
+  &__logo{
+    margin-top:50px;
+    text-align: center;
+    @media (min-width:$bureau) {
+      display: none;
+    }
+  }
+  &__section{
+    margin-top:20px;
+    @media (min-width:$bureau){
+      width: span(4 of 12);
+    }
+    &Medias{
+      padding: 0;
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      flex-flow: row;
+      align-items: center;
+      @media (min-width:$bureau){
+        img {
+          filter: contrast(80%);
+          width: 30px;
+          &:hover {
+            text-decoration: none;
+            filter: contrast(100%);
+          }
+        }
+      }
+    }
+  }
+  &__copyrights{
+    border-top: $rouge solid 150px;
+    margin-top: -150px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,241 @@
+/**
+ * @author Alexandre Blanchet <alexandre.blanchet.ab@gmail.com>
+*/
+.navigation{
+  z-index: 99;
+  font-family: $fontePrimaire;
+  font-weight: lighter;
+  @include fontSize(16px);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height:60px;
+
+  background-color: $jaune;
+  margin:0;
+  a{
+    &:hover{
+      color:$jaune;
+      text-decoration: none;
+    }
+    img {
+      &:hover {
+        text-decoration: none;
+        filter: contrast(80%);
+      }
+    }
+  }
+  &__logo{
+    display: flex;
+    background: transparent;
+    picture{
+      background-color: transparent;
+    }
+    img{
+      @media (min-width:$bureau){
+        padding-left:5%;
+      }
+      @media (max-width:$bureau){
+        width: 40%;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index:4;
+        background-color: transparent;
+      }
+    }
+  }
+
+  li {
+    background: none;
+    height: fit-content;
+  }
+  @media (min-width:$bureau){
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__mobile{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index:2;
+    @media (min-width:$bureau) {
+      display:none;
+    }
+    a {
+      &:hover {
+        color: $rouge;
+        text-decoration: none;
+      }
+    }
+    &--ouvert{
+      position: relative;
+      background-color:$jaune;
+      height: -webkit-fill-available;
+      .menu{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        margin-top: 100px;
+        height: 200px;
+        top: 0;
+        padding-left: 0;
+        text-align: center;
+        background-color: $jaune;
+      }
+    }
+    &Ligne{
+      background-color: $brunFonce;
+      display: inline-flex;
+      height: 2px;
+      width: 50%;
+      margin: 0 25% 0;
+      align-self: center;
+    }
+    &Secondaire{
+      display: flex;
+      flex-flow: column;
+      background: #f0b139;
+      ul{
+        height: 0px;
+      }
+      &--langues{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        padding-left:0;
+      }
+      &--medias{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        align-items: center;
+        margin-top: 60px;
+
+        li{
+          padding:0 10px 0;
+        }
+        img{
+          background: transparent;
+        }
+      }
+    }
+  }
+  &__table{
+    width: 100%;
+    padding-right: 2%;
+
+    @media (min-width:1100px) {
+      padding-left: 20%;
+    }
+    @media (max-width:$bureau) {
+      display:none;
+    }
+    &Principale{
+      display: flex;
+      flex-flow: row-reverse;
+      justify-content: space-between;
+      ul{
+        display: flex;
+      }
+      li{
+        padding: 0 10px 0;
+      }
+    }
+    &Secondaire{
+      display: flex;
+      justify-content: space-around;
+      padding-left:25%;
+
+
+      @include fontSize(14px);
+
+      li{
+        padding: 0 5px 0;
+      }
+      .gras{
+        font-weight: 900;
+      }
+      &--langues{
+        display: flex;
+        flex-flow: row;
+        margin: 0;
+      }
+      &--medias{
+        display: flex;
+        flex-flow: row;
+        margin: 0;
+        align-items: center;
+        a{
+          &:hover{
+            color:$jaune;
+            text-decoration: none;
+          }
+          img {
+            width: 20px;
+            filter: contrast(80%);
+            &:hover {
+              text-decoration: none;
+              filter: contrast(100%);
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  &__controle{
+    position: absolute;
+    top:0;
+    right:0;
+    border:none;
+    background-color: $jaune;
+    margin-left: 5px;
+    float:right;
+    z-index:3;
+    @media (min-width:$bureau){
+      display:none;
+    }
+    &--icon{
+      @include fontSize(30px);
+      background-color: $jaune;
+    }
+
+  }
+  &--bureau {
+    display: none;
+  }
+  .js & {
+    &--ferme {
+      div {
+        display: none;
+      }
+    }
+  }
+  @media (min-width: 600px) {
+    &--mobile {
+      display: none;
+    }
+    &--bureau {
+      display: block;
+      position: absolute;
+      height: 100%;
+    }
+  }
+}
+

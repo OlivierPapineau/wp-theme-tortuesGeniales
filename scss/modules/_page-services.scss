@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/**
+ * @author Simon-Gabriel Côté-Poulin simon_gab@outlook.com
+*/
+
+
+
+.pageService {
+  &__titre {
+    text-align: center;
+  }
+  &__presentation {
+    width: span(8 of 12);
+    margin: 0 auto 40px auto;
+    text-align: center;
+  }
+}
+
+.services {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  &__service {
+    h1, h2 {
+      text-align: center;
+      @media (min-width: $bureau) {
+        text-align: center;
+      }
+    }
+    h2 {
+      font-size: 2.4rem;
+    }
+    width: 100%;
+    border-bottom: 4px solid black;
+    margin: 40px 20px;
+    @media (min-width: $bureau) {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-around;
+      width: span(4 of 12);
+      margin: 0 gutter(1 of 12) 40px 0;
+      border-bottom: none;
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+    &:nth-child(5n) {
+      border-bottom: none;
+    }
+    &--image {
+      display: block;
+      margin: 0 auto;
+      @media (min-width: $bureau) {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    &--titre {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+}
+
+.plus {
+  display: flex;
+  justify-content: flex-end;
+  &__texte {
+
+  }
+  &__image {
+    margin-left: 5px;
+  }
+}
+

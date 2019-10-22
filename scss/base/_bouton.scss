@@ -1,0 +1,14 @@
+/**
+ * @author Alexandre Blanchet <alexandre.blanchet.ab@gmail.com>
+*/
+
+.accueilBouton{
+  background-color:$jaune;
+  padding:10px 30px 10px;
+  color: $brunFonce;
+  &:hover{
+    background-color: $blanc;
+    text-decoration: none;
+    filter: contrast(70%);
+  }
+}

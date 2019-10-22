@@ -1,0 +1,49 @@
+/**
+ * @author Alexandre Blanchet <alexandre.blanchet.ab@gmail.com>
+*/
+
+.enteteCommun{
+  position: relative;
+  z-index:98;
+  &__image{
+    @media (min-width:$bureau) {
+      width: span(12 of 12);
+
+    }
+    img {
+      height: auto;
+      width: span(4 of 4);
+      @media (min-width:$bureau) {
+        width: span(10 of 12);
+      }
+    }
+
+  }
+  &__boiteText{
+    position: absolute;
+    top: 30%;
+    width: span(4 of 4);
+    @media (min-width:$bureau) {
+      width: span(12 of 12);
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &--boite{
+      background: rgba($brunFonce, .7);
+      border: $rouge solid 2px;
+      border-left: none;
+      width: span(3 of 4)+gutter();
+      padding: 2px 25px 2px;
+      font-family: $fonteSecondaire;
+      @include fontSize(22px);
+      font-weight: bold;
+      text-align: end;
+      @media (min-width:$bureau) {
+        @include fontSize(30px);
+        width: span(5 of 12)+gutter();
+        border: $jaune solid 2px;
+      }
+    }
+  }
+}
